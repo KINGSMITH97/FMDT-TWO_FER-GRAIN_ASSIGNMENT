@@ -1,5 +1,5 @@
 BigInt square(final int n) {
-  var results = BigInt.from(2).pow(n - 1);
+  final results = BigInt.from(2).pow(n - 1);
   return results;
 }
 
@@ -9,4 +9,8 @@ BigInt total() {
     results += square(i);
   }
   return results;
+}
+
+BigInt squares(final int n) {
+  return BigInt.from(2).pow(n - 1);
 }
